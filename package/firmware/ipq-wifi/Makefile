@@ -26,6 +26,7 @@ endef
 
 ALLWIFIBOARDS:= \
 	8dev_habanero-dvk \
+	arcadyan_aw1000 \
 	aruba_ap-303 \
 	avm_fritzrepeater-1200 \
 	buffalo_wtr-m2133hp \
@@ -129,6 +130,7 @@ endef
 # Add $(eval $(call generate-ipq-wifi-package,<devicename>,<display name>))
 
 $(eval $(call generate-ipq-wifi-package,8dev_habanero-dvk,8devices Habanero DVK))
+$(eval $(call generate-ipq-wifi-package,arcadyan_aw1000,Arcadyan AW1000))
 $(eval $(call generate-ipq-wifi-package,aruba_ap-303,Aruba AP-303))
 $(eval $(call generate-ipq-wifi-package,avm_fritzrepeater-1200,AVM FRITZRepeater 1200))
 $(eval $(call generate-ipq-wifi-package,buffalo_wtr-m2133hp,Buffalo WTR-M2133HP))
